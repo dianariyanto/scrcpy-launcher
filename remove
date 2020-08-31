@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Remove Scrcpy Launcher : Delete $1"
-rm $PWD/shortcut/$1.desktop 
+rm $PWD/shortcut/"$1".desktop 
 echo "Remove Scrcpy Launcher : Processing.."
-rm $HOME/.local/share/applications/$1.desktop
+rm $HOME/.local/share/applications/"$1".desktop
 echo "Remove Scrcpy Launcher : Done."

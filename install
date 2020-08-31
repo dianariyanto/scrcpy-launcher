@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Install Scrcpy Launcher : Create $1"
+echo "Install Scrcpy Launcher : Add $1"
 echo "Install Scrcpy Launcher : Processing.."
 echo "#!/bin/bash
 [Desktop Entry]

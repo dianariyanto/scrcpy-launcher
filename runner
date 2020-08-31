@@ -1,0 +1,18 @@
+#!/bin/bash
+# Screen Resolution
+DEFAULT_RESOLUTION="720"
+# Refered to your Local network Bandwith
+DEFAULT_BITRATE="1M"
+# FPS
+DEFAULT_FPS="15"
+# ADB Port
+DEFAULT_PORT="5555"
+
+DEVICE_S=$1":"$DEFAULT_PORT
+
+# connect devices
+adb connect $DEVICE_S
+# cek devices
+adb devices
+#start
+scrcpy --serial $DEVICE_S --bit-rate $DEFAULT_BITRATE --max-size $DEFAULT_RESOLUTION --max-fps $DEFAULT_FPS

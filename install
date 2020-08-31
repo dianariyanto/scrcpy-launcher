@@ -1,0 +1,26 @@
+#!/bin/bash
+echo "Install Scrcpy Launcher : Create $1"
+echo "Install Scrcpy Launcher : Processing.."
+echo "#!/bin/bash
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=bash $PWD/runner $2
+Name=$1
+Comment=$1
+Icon=$PWD/icon/phone.png
+" > shortcut/$1.desktop
+
+echo "Install Scrcpy Launcher : Copying $1 to Launcher"
+echo "Install Scrcpy Launcher : Processing.."
+cp $PWD/shortcut/$1.desktop $HOME/.local/share/applications/$1.desktop
+cp $PWD/shortcut/$1.desktop $HOME/Desktop/$1.desktop
+
+echo "Install Scrcpy Launcher : Fix $1 Permission"
+echo "Install Scrcpy Launcher : Processing.."
+chmod +x runner
+chmod +x remove
+chmod +x $HOME/.local/share/applications/$1.desktop
+chmod +x $HOME/Desktop/$1.desktop
+echo "Install Scrcpy Launcher : Done."

@@ -1,6 +1,24 @@
 # Remote Android via ADB Wireless using scrcpy
 Wireless remote your Android Phone or Tablet without Internet and any 3rd party software installed on your Android device (Android 5+). Older version of Android can still use this tool by installing *WiFi ADB - Debug Over Air* app available [here](https://play.google.com/store/apps/details?id=com.ttxapps.wifiadb). 
 
+![View and Control Android from Linux](https://raw.githubusercontent.com/dianariyanto/scrcpy-launcher/master/shortcut/scrcpy-launcher.gif)
+
+## How to use?
+
+First of all you must connect your Android and PC to same network.
+
+### (Android) Enable ADB over Network
+
+Setting > Developer Options > Enable ADB over network
+
+Remember your IP address
+
+![View and Control Android from Linux](https://raw.githubusercontent.com/dianariyanto/scrcpy-launcher/master/shortcut/adb.jpg)
+
+If you are using an older device under Android 5.0 (Lolipop) must install *WiFi ADB - Debug Over Air* app available [here](https://play.google.com/store/apps/details?id=com.ttxapps.wifiadb) this app need root access to work with scrcpy-launcher.
+
+### (PC) Download and Install Scrcpy Launcher
+
 Install Depedency
 
 ```shell
@@ -34,7 +52,7 @@ dianariyanto@pop-os:~/$ cd scrcpy-launcher/
 
 dianariyanto@pop-os:~/scrcpy-launcher$ chmod +x install 
 
-dianariyanto@pop-os:~/scrcpy-launcher$ ./install "Redmi Note 6 Pro" 192.168.11.24
+dianariyanto@pop-os:~/scrcpy-launcher$ ./install "Redmi Note 6 Pro" 192.168.xx.xx
 Install Scrcpy Launcher : Add Redmi Note 6 Pro
 Install Scrcpy Launcher : Processing..
 Install Scrcpy Launcher : Copying Redmi Note 6 Pro to Launcher

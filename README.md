@@ -13,7 +13,7 @@ Setting > Developer Options > Enable ADB over network
 
 Remember your IP address
 
-![View and Control Android from Linux](https://raw.githubusercontent.com/dianariyanto/scrcpy-launcher/master/shortcut/adb.jpg)
+![View and Control Android using ADB](https://raw.githubusercontent.com/dianariyanto/scrcpy-launcher/master/shortcut/adb.jpg)
 
 If you are using an older device under Android 5.0 (Lolipop) must install *WiFi ADB - Debug Over Air* app available [here](https://play.google.com/store/apps/details?id=com.ttxapps.wifiadb) this app need root access to work with scrcpy-launcher.
 
@@ -31,6 +31,9 @@ Install Scrcpy Launcher
 ```shell
 ./install <DeviceName> <IPADDRESS>
 ```
+
+![View and Control Android using ADB](https://raw.githubusercontent.com/dianariyanto/scrcpy-launcher/master/shortcut/scrcpy-launcher.jpg)
+
 Remove Scrcpy Launcher
 ```shell
 ./remove <DeviceName>

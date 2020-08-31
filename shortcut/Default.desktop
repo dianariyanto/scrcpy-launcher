@@ -1,0 +1,9 @@
+#!/bin/bash
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=bash /home/dianariyanto/App/scrcpy/runner 192.168.11.25
+Name=Mi4c
+Comment=Mi4c
+Icon=/home/dianariyanto/App/scrcpy/icon/phone.png

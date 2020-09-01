@@ -1,3 +1,6 @@
-mi4c.sh
-redmi4x.sh
-remote-android
+shortcut/*
+
+!shortcut/adb.jpg
+!shortcut/scrcpy-launcher.jpg
+!shortcut/scrcpy-launcher.png
+!shortcut/scrcpy-launcher.gif
